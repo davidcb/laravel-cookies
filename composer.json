@@ -1,0 +1,28 @@
+{
+	"name": "davidcb/cookies",
+	"description": "Cookies alert for Laravel",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "David Couto",
+			"email": "davidcouto@gmail.com"
+		}
+	],
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Davidcb\\Cookies\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Davidcb\\Cookies\\CookiesServiceProvider"
+			]/*,
+			"aliases": {
+				"Cookies": "Davidcb\\Cookies\\Facade"
+			}*/
+		}
+	}
+}

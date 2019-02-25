@@ -9,7 +9,10 @@
 			"email": "davidcouto@gmail.com"
 		}
 	],
-	"require": {},
+	"require": {
+		"php": ">=7",
+        "illuminate/support": "5.5.x|5.6.x|5.7.x"
+	},
 	"autoload": {
 		"psr-4": {
 			"Davidcb\\Cookies\\": "src/"
@@ -19,7 +22,10 @@
 		"laravel": {
 			"providers": [
 				"Davidcb\\Cookies\\CookiesServiceProvider"
-			]
+			],
+			"aliases": {
+				"LaravelCookies": "Davidcb\\Cookies\\Facade"
+			}
 		}
 	}
 }

@@ -11,7 +11,7 @@ class CookiesServiceProvider extends ServiceProvider {
 		$this->publishes([
 			__DIR__ . '/config/cookies.php' => config_path('cookies.php'),
 		]);
-		$this->loadViewsFrom(__DIR__ . '/resources/views', 'cookies');
+		$this->loadViewsFrom(__DIR__ . '/resources/views', 'laravel-cookies');
 		$this->loadRoutesFrom(__DIR__ . '/routes/web.php');
 	}
 

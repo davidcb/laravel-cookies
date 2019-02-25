@@ -1,8 +1,8 @@
-@if (!cookie('legal'))
+@if (!request()->cookie('legal'))
 
 	<div class="cookies">
 		<div class="container">
-			<p>Usamos cookies propias y de terceros para mejorar su experiencia en este sitio web. Si continúa navegando, entendemos que acepta nuestra <a href="{{ route('politica-cookies') }}">política de cookies.</a><a class="close_cookies" href="#">CERRAR</a></p>
+			<p>{!! config('cookies.text') !!} <a class="close_cookies" href="#">close</a></p>
 		</div>
 	</div>
 
